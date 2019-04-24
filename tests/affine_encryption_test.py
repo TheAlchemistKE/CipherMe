@@ -3,12 +3,15 @@
     Author: Kelyn Paul Njeri.
     Date: 24th April 2019
 """
-import unittest
+from .base_test import TestBaseCase as base
 
 
-class TestAffineCipher(unittest.TestCase):
+class TestAffineCipher(base):
+    """
+        Description: This module tests the efficiency and correctness of the code written for the Affine cipher. This module also makes sure that the code returns what is expected and gives assurance to the developer that everything works as it should.
+    """
     def setUp(self):
-        pass
+        base.setUp(self)
 
     def tearDown(self):
-        pass
+        base.tearDown(self)
