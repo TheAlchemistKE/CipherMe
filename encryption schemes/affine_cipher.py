@@ -16,6 +16,7 @@ class AffineCipher():
         # Convert the letters in the plain_text into their respective numeric values.
         _number_ops.text_to_numerics(plain_text=plain_text)
         # Convert the numeric values into their encrypted values using the formula E(x) = (ax + b) mod 26.
+        
 
         # Map the converted numeric values back into letters.
         _number_ops.numerics_to_text()
