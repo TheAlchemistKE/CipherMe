@@ -1,8 +1,10 @@
 import unittest
 
+
 class TestBaseCase(unittest.TestCase):
     def setUp(self):
-        pass
+        self.text_example_list = [
+            'Kelyn Paul', 'New Orleans', 'Cry Me a River.^^@8#)E#Y', 'Password@123']
 
     def tearDown(self):
-        pass
+        self.text_example_list = None
