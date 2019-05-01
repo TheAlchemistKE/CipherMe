@@ -7,6 +7,7 @@ class AffineCipher():
     def __init__(self):
         self.number_ops = NumberOperations()
         self.encryption_list = []
+        self.decryption_list = []
 
     def encrypt_text(self, plain_text=None, a=None, b=None):
         """Converts the plain text entered into cipher text."""
@@ -22,7 +23,15 @@ class AffineCipher():
         else:
             return "'a' and 'b' are not co-prime."
 
-    def decrypt_text(self, cipher_text=None):
+    def decrypt_text(self, cipher_text=None, a=None, b=None):
         numeral_values = self.number_ops.text_to_number(plain_text=cipher_text)
-        pass
-        
+        for index, number in enumerate(numeral_values):
+            if index <= len(numeral_values):
+                multiplicative_inv = self.number_ops.multiplicative_inverse(
+                    a=a, m=26)
+                # x = ((a^-1 * c) - b) mod 26
+                decrypted_value = (multiplicative_inv * (number - b)) % 26
+                self.decryption_list.append(decrypted_value)
+        return self.number_ops.numerics_to_text(numeric_cipher=self.decryption_list)
+                
+

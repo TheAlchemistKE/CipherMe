@@ -10,7 +10,8 @@ class TestAffineCipher(base):
             plain_text='Kelyn', a=7, b=15), 'Hrobc')
 
     def test_cipher_text_to_plain_text(self):
-        pass
+        self.assertEqual(self.affine.decrypt_text(
+            cipher_text='Hrobc', a=7, b=15), 'Kelyn')
 
     def tearDown(self):
         base.tearDown(self)
