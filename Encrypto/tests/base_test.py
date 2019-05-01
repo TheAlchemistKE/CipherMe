@@ -1,6 +1,6 @@
-from ..encrypto.affine_cipher import AffineCipher
-from ..encrypto.caesar_cipher import CaesarCipher
-from ..encrypto.utils.number_operations import NumberOperations
+from ..cipherme.affine_cipher import AffineCipher
+from ..cipherme.caesar_cipher import CaesarCipher
+from ..cipherme.utils.number_operations import NumberOperations
 import unittest
 
 
