@@ -1,4 +1,4 @@
-# Encrpyto.
+# Encrypyto.
 
 - This is a Python package in the making for people who enjoy toying around with some of the basic encryption schemes such as Affine Cipher, Vigenere Cipher and Caesar Cipher.
 
