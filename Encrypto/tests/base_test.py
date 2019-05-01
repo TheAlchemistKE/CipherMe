@@ -1,4 +1,5 @@
 from ..encryption_algorithms.affine_cipher import AffineCipher
+from ..encryption_algorithms.caesar_cipher import CaesarCipher
 from ..utils.number_operations import NumberOperations
 import unittest
 import sys
@@ -10,6 +11,7 @@ class TestBaseCase(unittest.TestCase):
         """Setting Up the Tests."""
         self.num_ops = NumberOperations()
         self.affine = AffineCipher()
+        self.caesar = CaesarCipher()
         # Text Test Values.
         self.text_example0 = 'Kelyn'
         self.text_example1 = 'This is a car'
