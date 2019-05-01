@@ -1,4 +1,4 @@
-from ..utils.number_operations import NumberOperations
+from .utils.number_operations import NumberOperations
 
 
 class CaesarCipher():

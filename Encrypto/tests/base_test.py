@@ -1,9 +1,7 @@
-from ..encryption_algorithms.affine_cipher import AffineCipher
-from ..encryption_algorithms.caesar_cipher import CaesarCipher
-from ..utils.number_operations import NumberOperations
+from ..encrypto.affine_cipher import AffineCipher
+from ..encrypto.caesar_cipher import CaesarCipher
+from ..encrypto.utils.number_operations import NumberOperations
 import unittest
-import sys
-sys.path.append('.')
 
 
 class TestBaseCase(unittest.TestCase):

@@ -1,4 +1,4 @@
-from ..utils.number_operations import NumberOperations, check_coprime
+from .utils.number_operations import NumberOperations, check_coprime
 
 
 class AffineCipher():
