@@ -8,7 +8,6 @@ The Encryption Algorithms contained herein are:
 
 - Affine Cipher.
 - RSA Encryption Algorithm.
-- Vigenere Cipher.
 - Caesar Cipher.
 
 ### Language Used.
